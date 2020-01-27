@@ -1,0 +1,166 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CE21469-3606-49F8-B8AC-1295F9084E66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>WindowsApplication1</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DPFPDevNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL" />
+    <Reference Include="DPFPEngNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=7fe76e7adf19964b, processorArchitecture=MSIL" />
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL" />
+    <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL" />
+    <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMhs.Designer.cs">
+      <DependentUpon>AddMhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getMPforPljr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="getMPforPljr.Designer.cs">
+      <DependentUpon>getMPforPljr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetMPforPngjr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetMPforPngjr.Designer.cs">
+      <DependentUpon>GetMPforPngjr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Absenform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Absenform.Designer.cs">
+      <DependentUpon>Absenform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputKelas.Designer.cs">
+      <DependentUpon>InputKelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP.Designer.cs">
+      <DependentUpon>MP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pngjr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pngjr.Designer.cs">
+      <DependentUpon>Pngjr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddMhs.resx">
+      <DependentUpon>AddMhs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getMPforPljr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>getMPforPljr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetMPforPngjr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GetMPforPngjr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Absenform.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Absenform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputKelas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InputKelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pngjr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pngjr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

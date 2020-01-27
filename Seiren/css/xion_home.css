@@ -1,0 +1,60 @@
+﻿
+#welcome_screen_outer1 {
+	width:890px;
+	height:100px;
+	padding:10px 10px 10px 10px;
+	margin: 25px;
+	background:#fff;
+}
+#container {
+	width:970px;
+	margin:15px auto;
+	text-align:left;
+	position:relative;
+}
+
+body
+{
+	width:1000px;
+}
+#welcome_screen {
+	width:820px;
+	height:409px;
+	background:transparent url("../images/Labo-1.jpg") no-repeat;
+	padding:0px 50px 0px 50px;
+}
+#tour{
+	width:815px;
+	height:409px;
+	float:left;
+}
+#New{
+	width:400px;
+	height:188px;
+	background:transparent url("../images/newCoba.png") no-repeat;
+	float:left;
+	margin:2px;
+}
+#Browse{
+	width:400px;
+	height:188px;
+	background:transparent url("../images/browseCoba.png") no-repeat;
+	float:right;
+	margin:2px;
+}
+#Admin{
+	width:400px;
+	height:188px;
+	background:transparent url("../images/adminCoba.png") no-repeat center;
+	float:left;
+	margin:2px;
+}
+
+#Data{
+	width:400px;
+	height:188px;
+	background:transparent url("../images/browseCoba.png") no-repeat;
+	float:right;
+	margin:2px;
+}
+/*this section only for first screen only*/

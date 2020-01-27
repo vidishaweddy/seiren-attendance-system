@@ -1,0 +1,1 @@
+cscript enumgroup.vbs >result.xls
